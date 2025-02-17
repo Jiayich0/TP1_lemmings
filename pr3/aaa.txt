@@ -1,0 +1,26 @@
+JRE Eclipse Adoptium/23 is not supported, advanced source lookup disabled.
+ Eclipse debugger will use less precise source lookup implementation for this debug session, but everything else will continue to work otherwise.
+Upgrading Eclipse to the latest version will likely make this warning go away.Lemmings 3.0
+
+Number of cycles: 0
+Lemmings in board: 4
+Dead lemmings: 0
+Lemmings exit door: 0 ┃2
+
+      1    2    3    4    5    6    7    8    9   10  
+   ┌——————————————————————————————————————————————————┐
+  A┃                                             [32m  B  [0m┃A
+  B┃                                        [48;2;218;165;32m     [0m[48;2;218;165;32m     [0m┃B
+  C┃                                                  ┃C
+  D┃          [32m  B  [0m[32m  B  [0m                              ┃D
+  E┃          [48;2;218;165;32m     [0m[48;2;218;165;32m     [0m[48;2;218;165;32m     [0m                         ┃E
+  F┃                    [46m[37m  E  [0m          [48;2;218;165;32m     [0m          ┃F
+  G┃                    [48;2;218;165;32m     [0m[48;2;218;165;32m     [0m[48;2;218;165;32m     [0m[48;2;218;165;32m     [0m          ┃G
+  H┃                                                  ┃H
+  I┃[32m  B  [0m                                   [48;2;218;165;32m     [0m     ┃I
+  J┃[48;2;218;165;32m     [0m[48;2;218;165;32m     [0m                              [48;2;218;165;32m     [0m[48;2;218;165;32m     [0m┃J
+   └——————————————————————————————————————————————————┘
+      1    2    3    4    5    6    7    8    9   10  
+
+Command > [DEBUG] Executing: load conf_0
+

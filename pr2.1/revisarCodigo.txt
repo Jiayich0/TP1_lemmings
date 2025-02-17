@@ -1,0 +1,38 @@
+---------------------------------------------------------------------------------------------------
+Pr2		metodo execute		"Más adelante puede ocurrir que la ejecución de un comando no tenga 
+		<NoParamsCommand>	éxito, en cuyo caso se puede usar gameView para mostrar un mensaje de 
+							error"
+---------------------------------------------------------------------------------------------------
+Pr2		metodo parse		"creará una nueva instancia de la misma clase en caso de que el comando
+		<NoParamsCommand>	tenga atributos de estado que hagan que su comportamiento sea distinto
+							para cada instancia de la clase"
+		(diferenciar entre 'unknown command' y 'wrong parameter number')
+---------------------------------------------------------------------------------------------------
+Pr2		metodo parse		"Fíjate también que para los comandos con parámetros no sería correcto
+		<NoParamsCommand>	que su método parse devuelva this, sino que es necesario devolver
+							un nuevo comando del tipo correspondiente"
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gameobject
+	GameObeject				done (creo)
+	Lemming					to-do
+lemmingRole
+	walkerRole				done (creo)		mirar si esta bien
+Direction					done
+Game						to-do
+GameObejectContainer		to-do
+GameStatus					to-do
+Position					done

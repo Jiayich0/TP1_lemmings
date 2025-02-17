@@ -1,0 +1,44 @@
+	
+	
+	pueden pedir en examen modificaciones o adiciones de 
+	// examen: start()
+	// examen: metalWall interactua con algo
+
+---------------------------------------------------------------------------------------------------
+Pr2.1	metodo execute		"Más adelante puede ocurrir que la ejecución de un comando no tenga 
+		<NoParamsCommand>	éxito, en cuyo caso se puede usar gameView para mostrar un mensaje de 
+							error"
+		(diferenciar entre 'unknown command' y 'wrong parameter number')
+---------------------------------------------------------------------------------------------------
+pr2.2	parse				caso default - arreglar o solucionar para que no de errores
+		<LemmingRoleFactory>
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+CLASE				A LO QUE LLAMA							LO QUE HACE												VALOR
+Lemming.java		Llama a checkInteractions()				hace un game.receiveInteractionsFrom(this)				this = Lemming
+
+Game.java			Llama a receiveInte...(object)			hace un conatiner.checkInteractionsFrom(this)			this = Lemming
+
+Container.java		Llama a checkInterc...(other)			recorre gameobjects a ver quién cumple con				other = Lemming
+															obj.receiveInteraction(other)							obj = Wall
+
+Wall.java			Llama a receiveInteraction(other)		other.interactWith(this)								other = Lemming
+																													this = Wall	
+
+Lemming.java		Llama a interactWith(Wall)				hace un rol.interactWith(obj, this)						this = Lemming
+																													obj = Wall
+																													rol = DownCaver
+
+DownCaver.java		Llama a interactWith(Wall, Lemming)		crea un booleano de 'interact', es true cuando lemming
+															esta encima de wall (algo así como, 
+															lemming.isOver(wall). luego un if: if(interact)
+															hasCaved = true y wall.kill(); return interact;
+															hasCaved es un atributo booleano de DownCaver inicia-
+															izado a false; y .kill() es poner isAlive de wall
+															a false. 
+														
+

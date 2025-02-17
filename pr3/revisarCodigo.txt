@@ -1,0 +1,72 @@
+	
+	
+	pueden pedir en examen modificaciones o adiciones de 
+	// examen: start()
+	// examen: metalWall interactua con algo
+	// exmaen: nuevo role o command
+
+
+---------------------------------------------------------------------------------------------------
+
+REVISIÓN		ARCHIVO				MÉTODO					DESCRIPCIÓN
+-----------------------------------------------------------------------------------------------------															se puede quitar de la cabecera?
+Leve	 		NoneCommand			<matchCommandName>		si isBlank está bien y si el delegar macthCommandName esta bien hecho
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CLASE				A LO QUE LLAMA							LO QUE HACE												VALOR
+Lemming.java		Llama a checkInteractions()				hace un game.receiveInteractionsFrom(this)				this = Lemming
+
+Game.java			Llama a receiveInte...(object)			hace un conatiner.checkInteractionsFrom(this)			this = Lemming
+
+Container.java		Llama a checkInterc...(other)			recorre gameobjects a ver quién cumple con				other = Lemming
+															obj.receiveInteraction(other)							obj = Wall
+
+Wall.java			Llama a receiveInteraction(other)		other.interactWith(this)								other = Lemming
+																													this = Wall	
+
+Lemming.java		Llama a interactWith(Wall)				hace un rol.interactWith(obj, this)						this = Lemming
+																													obj = Wall
+																													rol = DownCaver
+
+DownCaver.java		Llama a interactWith(Wall, Lemming)		crea un booleano de 'interact', es true cuando lemming
+															esta encima de wall (algo así como, 
+															lemming.isOver(wall). luego un if: if(interact)
+															hasCaved = true y wall.kill(); return interact;
+															hasCaved es un atributo booleano de DownCaver inicia-
+															izado a false; y .kill() es poner isAlive de wall
+															a false. 
+														
+														
+														
+														
