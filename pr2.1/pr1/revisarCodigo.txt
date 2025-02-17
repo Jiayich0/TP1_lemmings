@@ -1,6 +1,0 @@
-en controller ver si reset esta bien, mirar si la solucion de tener un atributo para inicial level y separar 
-el if de initgame0 o 1 esta bien
-
-hay un error en test2 de la pr1 porque cuando pilla "help con argumentos incorrectos" deberia coger esta frase entera
-como no válida pero como la primera palabra es "help" sí lo ejecuta (en los test expected detecta como no válida)
-Preguntar si esta bien el if extra con continue (incorrect parameter numnber)
